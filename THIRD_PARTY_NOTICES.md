@@ -31,3 +31,9 @@ Adapted file: pure matching functions from `keyword-match.mjs` into `lib/integra
 The source repositories' instruction files describe their own products. They are not installed as instructions, executed, or allowed to change applyAmigo user policy.
 
 Source Sans 3 by Adobe, distributed under the SIL Open Font License 1.1. See licenses/Source-Sans-3-OFL.txt. Font files are hosted locally.
+
+## Mckay's App Template
+
+Marketing section composition and the separation of the marketing entry point from dashboard routes are adapted from https://github.com/mckaywrigley/mckays-app-template, revision d605aa5c1a6260c716576e8030b4c0b19ee197ab. Copyright (c) 2025 Mckay Wrigley. MIT license retained in licenses/Mckay-App-Template-MIT.txt.
+
+The landing copy, examples, CSS and application route mapping are specific to applyAmigo. Clerk, Stripe, Supabase and the template's example testimonials were not imported. Authentication, authorization and workspace persistence remain the existing Sites and D1 implementation.

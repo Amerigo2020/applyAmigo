@@ -72,3 +72,9 @@ For a separate installation, register your own Site and replace the Site identit
 ## License and provenance
 
 MIT. Upstream notices and exact source commits are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [licenses](licenses) and [the integration notes](docs/upstream-integration.md). The interface, application state and API are new code. The upstream command line agents and automatic submission features are not executed.
+
+## Entry points
+
+The product landing page is `/`. The authenticated workspace is `/dashboard`, with direct routes `/dashboard/stellen`, `/dashboard/bewerbungen`, `/dashboard/unterlagen`, `/dashboard/zeitplan` and `/dashboard/einstellungen`. Browser back/forward and refresh preserve the selected section. Unknown dashboard paths return 404. API authorization is unchanged.
+
+The landing page has no workspace data fetch and only contains fictional, labeled examples. It uses the marketing/dashboard separation from Mckay's App Template, with provenance in THIRD_PARTY_NOTICES.md. On the current owner-private Sites deployment, the hosting gateway still limits access to the entire Site, including the landing page. Adding a landing page does not make this installation publicly accessible.
