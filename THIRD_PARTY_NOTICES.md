@@ -29,3 +29,5 @@ License: [MIT, original text](licenses/career-ops-LICENSE)
 Adapted file: pure matching functions from `keyword-match.mjs` into `lib/integrations/keyword-match.ts`. Included logic covers synonyms, normalized text, boundary matching, plural forms, and keyword coverage. CLI, filesystem, CV mutation, and process execution code are excluded. applyAmigo adds Unicode boundaries, input limits, and an explicit technical keyword dictionary.
 
 The source repositories' instruction files describe their own products. They are not installed as instructions, executed, or allowed to change applyAmigo user policy.
+
+Source Sans 3 by Adobe, distributed under the SIL Open Font License 1.1. See licenses/Source-Sans-3-OFL.txt. Font files are hosted locally.

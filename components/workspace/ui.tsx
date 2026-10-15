@@ -17,7 +17,7 @@ export function Logo({ small = false }: { small?: boolean }) {
 
 export function MatchRing({ score, compact = false }: { score: number; compact?: boolean }) {
   const safeScore = Math.min(100, Math.max(0, score));
-  return <span className={`match-ring ${compact ? "compact" : ""}`} title={`${safeScore} von 100 Punkten Profilpassung. Keine Erfolgswahrscheinlichkeit.`} aria-label={`${safeScore} von 100 Punkten Profilpassung`}><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" className="ring-track"/><circle cx="24" cy="24" r="20" className="ring-value" strokeDasharray={`${safeScore * 1.257} 125.7`}/></svg><strong>{safeScore}</strong></span>;
+  return <span className={`match-ring ${compact ? "compact" : ""}`} title={`${safeScore} von 100 Punkten Profilpassung. Keine Erfolgswahrscheinlichkeit.`} aria-label={`${safeScore} von 100 Punkten Profilpassung`}><strong>{safeScore}</strong><small>/100</small></span>;
 }
 
 export function EmptyState({ icon: Icon, title, description, children }: { icon: LucideIcon; title: string; description: string; children?: ReactNode }) {
